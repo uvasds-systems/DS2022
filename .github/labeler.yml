@@ -1,0 +1,3 @@
+people:
+- changed-files:
+  - any-glob-to-any-file: './people/*'
