@@ -1,3 +1,4 @@
+practice [main]$ cat 03-cleaning/mock_data.tsv 
 id	first_name	last_name	email	ip_address	dob
 1	Evelyn	Brockhurst	ebrockhurst0@bing.com	40.101.189.143	04/02/1987
 2	Carmelina	Euler	ceuler1@washington.edu	82.222.180.187	10/17/1980
@@ -17,7 +18,7 @@ id	first_name	last_name	email	ip_address	dob
 16	Julian	St Leger	jstlegerf@barnesandnoble.com	20.150.228.198	09/24/1992
 17	Selena	Elix	selixg@wikispaces.com	49.130.236.99	12/02/1991
 18	Rorke	Richichi	rrichichih@gov.uk	223.19.109.23	04/13/1996
-19	Gerianne	Shawyers	gshawyersi@ucoz.ru	251.230.48.79	06/05/1990
+
 20	Vittoria	Dack	vdackj@techcrunch.com	52.75.120.100	06/20/1994
 21	Brody	Riggott	briggottk@berkeley.edu	180.117.7.142	05/23/1997
 22	Glynn	Toovey	gtooveyl@cnet.com	22.78.230.190	04/25/1986
@@ -63,8 +64,8 @@ id	first_name	last_name	email	ip_address	dob
 62	Virgil	Simanenko	vsimanenko1p@bloomberg.com	15.225.157.64	10/10/1980
 63	Fidole	Norkett	fnorkett1q@gmpg.org	16.241.104.94	06/23/1981
 64	Annissa	Barnfield	abarnfield1r@shutterfly.com	197.48.176.149	07/03/1985
-65	Pavel	Orrum	porrum1s@youtu.be	47.167.238.96	04/23/1987
-66	Loise	Ritmeier	lritmeier1t@zimbio.com	138.15.83.147	06/19/1987
+
+
 67	Jamesy	Planque	jplanque1u@usgs.gov	80.152.71.117	05/08/1997
 68	Damiano	Benardeau	dbenardeau1v@japanpost.jp	237.225.77.130	06/30/1985
 69	Cherri	McDougald	cmcdougald1w@toplist.cz	174.10.130.106	05/24/1990
@@ -85,7 +86,7 @@ id	first_name	last_name	email	ip_address	dob
 84	Cole	Kindle	ckindle2b@dot.gov	240.254.220.145	04/01/1991
 85	Doe	Whines	dwhines2c@adobe.com	121.175.83.74	08/13/1988
 86	Travus	Kneath	tkneath2d@sbwire.com	238.162.86.215	11/24/1994
-87	Sherm	Woollends	swoollends2e@hatena.ne.jp	35.5.155.186	05/07/1989
+
 88	Basil	St. Ledger	bstledger2f@imgur.com	196.72.84.51	04/10/1997
 89	Janeczka	Skipperbottom	jskipperbottom2g@state.tx.us	71.11.240.157	04/15/1997
 90	Robenia	Verma	rverma2h@cnn.com	220.86.10.16	05/21/1993

@@ -11,4 +11,5 @@ tr '\t' ',' < file.tsv > file.csv
 sed 's/'$'\t''/,/g' file.tsv > file.csv
 
 # Use `awk` - "pattern scanning and processing language"
-awk 'BEGIN { FS="\t"; OFS="," } {$1=$1; print}' file.tsv > file.csvm
+awk 'BEGIN { FS="\t"; OFS="," } {$1=$1; print}' file.tsv > file.csv
+
