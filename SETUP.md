@@ -1,4 +1,6 @@
-# Getting Started
+# Course Setup
+
+- - -
 
 Complete the following steps before the first class meeting.
 
