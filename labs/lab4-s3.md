@@ -41,7 +41,7 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
 
 ## Create and Configure an S3 Bucket
 
-1. From either the Learner Lab terminal web page OR your local terminal, list any existing buckets (there should be none):
+1. From either the VS Code or your local terminal, list any existing buckets (there should be none):
 
     ```
     aws s3 ls
@@ -122,9 +122,7 @@ For example, this URL is to a publicly-accessible file within a publicly-accessi
 
 9. Update your bucket's ACL (Access Control List)
 
-    - Open the AWS Management Console to perform this task: 
-        - AWS Academy users click the "Download URL" button in the "AWS Details" panel of your Learner Lab. The URL in that file will sign you in automatically.
-        - Personal AWS account users should go to https://console.aws.amazon.com/ and sign in.
+    - Open the AWS Management Console to perform this task:  https://console.aws.amazon.com/
     - Within the AWS Management Console, open the S3 service and find your bucket.
     - Click the name of the bucket to get detailed settings.
     - Select the Permissions tab within your bucket settings.
@@ -205,8 +203,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import boto3
 >>>
 ```
-
-**NOTE**: If you get a Python 3.7 `PythonDeprecationWarning` that is to be expected. If you are using the AWS Academy Learner Lab you can get around this by explicitly invoking `python3.8` when you run Python.
 
 The following tasks assume you are able to import `boto3` successfully.
 
@@ -299,7 +295,7 @@ response = s3.generate_presigned_url(
     'get_object',
     Params={'Bucket': bucket_name, 'Key': object_name},
     ExpiresIn=expires_in
-    )
+)
 ```
 
 ## Submit your work
