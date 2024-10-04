@@ -6,8 +6,8 @@ import os
 s3 = boto3.client('s3', region_name='us-east-1')
 
 bucket = 'ds2022-ejv4pz'
-local_file = 'moo_deng.png'
-file_name = 'moo_deng.png' 
+local_file = 'deng2.jpg'
+file_name = 'deng2.jpg' 
 expires_in = 604800  # 7 days
 
 os.makedirs(os.path.dirname(local_file), exist_ok=True)
