@@ -1,0 +1,13 @@
+#!/bin/bash
+
+BUCKET_NAME="ds2022-epj7rf"
+
+FILE_PATH="jackjohnson"
+
+EXPIRE_TIME=604800
+
+aws s3 cp "$FILE_PATH" s3://"$BUCKET_NAME"/
+
+PRESIGNED_URL=$(aws s3 presign --expires-in $EXPIRE_TIME s3://"$BUCKET_NAME"/"$FILE_PATH")
+
+echo "Presigned URL: $PRESIGNED_URL"

@@ -1,0 +1,24 @@
+#!/usr/bin/python3
+
+import boto3
+
+#I got help from ChatGPT for this script, I got a little lost in trying to solve this
+
+
+bucket_name = 'ds2022-epj7rf'
+file_path = 'jackjohnson'
+expires_in = 604800
+
+s3 = boto3.client('s3')
+
+s3.upload_file(file_path, bucket_name, file_path)
+
+presigned_url = s3.generate_presigned_url(
+	'get_object',
+	Params={'Bucket': bucket_name, 'Key': file_path},
+	ExpiresIn=expires_in
+)
+
+print(f'Presigned URL: {presigned_url}')
+
+ 
