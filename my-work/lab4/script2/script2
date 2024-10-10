@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+
+import boto3
+import requests
+import urllib.request
+
+url = "https://www.galvanizeaction.org/wp-content/uploads/2022/06/Wow-gif.gif"
+object_name = 'surprise.gif'
+response=requests.get(url)
+
+bucket_name = 'dpv8cf-practice'
+s3 = boto3.client('s3', region_name= 'us-east-1')
+
+with open(object_name, 'rb') as file_data:
+	resp = s3.put_object(
+		Body = file_data,
+		Bucket = bucket_name,
+		Key = object_name,
+		ACL = 'public-read'
+	)
+
+expires_in = 604800
+
+response = s3.generate_presigned_url(
+	'get_object',
+	Params={'Bucket': bucket_name, 'Key': object_name},
+	ExpiresIn=expires_in
+	)
+
+print(response)

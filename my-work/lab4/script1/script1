@@ -1,0 +1,14 @@
+#!/bin/bash
+
+bucket_name="ds2022-dpv8cf"
+file_link="https://upload.wikimedia.org/wikipedia/en/5/53/Snoopy_Peanuts.png"
+file_name="snoopy.jpg"
+
+curl $file_link -o $file_name
+
+aws s3 cp "$file_name" s3://$bucket_name/
+
+presigned_url=$(aws s3 presign --expires-in 604800 s3://$bucket_name/$file_name)
+
+echo $presigned_url
+

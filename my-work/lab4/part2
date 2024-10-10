@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import boto3
+
+s3 = boto3.client('s3', region_name='us-east-1')
+
+# make request
+response = s3.list_buckets()
+
+# now iterate through the response:
+for r in response['Buckets']:
+  print(r['Name'])
+
+bucket = 'ds2022-dpv8cf'
+local_file = 'project/vuelta.jpg'
+
+resp = s3.put_object(
+    Body = local_file,
+    Bucket = bucket,
+    Key = local_file
+
