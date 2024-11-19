@@ -12,7 +12,7 @@
 
 - Quiz 3 - due 11/20 (tomorrow)
 - Quiz 4 - due 12/5
-- Fianl Exam - due 12/17
+- Final Exam - due 12/17
   
 ## Data Projects
 
