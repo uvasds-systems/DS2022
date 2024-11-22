@@ -16,7 +16,7 @@
   
 ## Data Projects
 
-- Data Project 1 - due 12/6
+- Data Project 1 - due 12/5
 - Data Project 2 - due 12/17
 
 **EVERYTHING** submitted by 11:59pm on Tues Dec 17, 2024.
