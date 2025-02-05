@@ -37,10 +37,11 @@ This multi-step `bash` script should retrieve a tar compressed archive from a re
 
 1. Create a script `convert-bundle.sh` and add a shebang.
 
-2. Using `curl` or `wget` fetch this tarball:
+2. Using `curl` or `wget` fetch one of these tarballs:
 
     ```
     https://s3.amazonaws.com/ds2002-resources/labs/lab3-bundle.tar.gz
+    https://s3.amazonaws.com/ds2002-resources/labs/stock_data.tsv
     ```
 
 3. Decompress / open the compressed archive using `tar`.
