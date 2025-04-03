@@ -1,4 +1,4 @@
-# Lab 5: Bootstrapping an EC2 Instance
+# Lab: Bootstrapping an EC2 Instance
 
 Bootstrapping is the process of bringing a resource onlne pre-loaded with OS updates, packages, and any software required to run without human intervention or further configuration. You can bootstrap a "barebones" instance of a particular OS distribution, or further bootstrap an already-customized AMI. Bootstrapping only occurs upon instance creation.
 
