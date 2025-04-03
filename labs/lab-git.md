@@ -1,4 +1,4 @@
-# Lab 2: GitHub Skills
+# Lab: GitHub Skills
 
 Follow all the steps below for practice using Git and GitHub. 
 
