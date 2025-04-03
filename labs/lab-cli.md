@@ -1,4 +1,4 @@
-# Lab 1: The Command Line
+# Lab: The Command Line
 
 Follow all the steps below for practice with the command line. At the bottom are instructions for commands you should write for each prompt, saved to a text file you create using the command line. Paste the contents of that file to the Lab assignment page for grading.
 
